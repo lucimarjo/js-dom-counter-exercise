@@ -1,4 +1,4 @@
-# Contador Interativo: Made in Heaven Edition
+# Contador Interativo
 
 Este projeto foi desenvolvido como um exercício de fixação para praticar a manipulação do **DOM (Document Object Model)** em JavaScript. O objetivo principal foi consolidar conceitos de eventos, funções e atualização dinâmica de elementos HTML antes de uma avaliação acadêmica.
 
