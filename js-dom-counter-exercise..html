@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            font-family: 'Comic Sans MS', 'Comic Sans', 'cursive';
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: rgb(205, 181, 181);
+        }
+        #valor-variavel{
+            font-size: 80px;
+            margin: 20px 0;
+            color: rgb(120, 15, 15);
+        }
+        .botoes{
+            display: flex;
+            gap: 15px;
+        }
+        button{
+            padding: 15px 25px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            transition: transform 0.1s, background 0.3s;
+        }
+        button:active{transform: scale(0.5);}
+        #incrementar{
+            background-color: rgb(47, 47, 163);
+            color:aqua;
+        }
+        #decrescer{
+            background-color: rgb(176, 31, 31);
+            color: pink;
+        }
+        #Made-in-Heaven{
+            background-color: blueviolet;
+            color:blanchedalmond
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Vamos aumentar e diminuir essa variavel</h1>
+    <h1 id="valor-variavel">0</h1>
+
+    <div class="botoes">
+        <button id="incrementar" onclick="incrementar()">Incrementar +1</button>
+        <button id="decrescer" onclick="decrementar()">Decrementar -1</button>
+        <button id="Made-in-Heaven" onclick="MadeInHeaven()">Made in Heaven</button>
+    </div>
+
+    <script>
+        let contador=0;
+        const display=document.getElementById('valor-variavel');
+
+        function atualizarTela(){
+            display.innerText = contador;
+        }
+
+        function incrementar(){
+            contador++;
+            atualizarTela();
+        }
+        function decrementar(){
+            contador--;
+            atualizarTela();
+        }
+        function MadeInHeaven(){
+            contador=0;
+            atualizarTela();
+        }
+
+    </script>
+</body>
+</html>
